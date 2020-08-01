@@ -1,0 +1,19 @@
+<h1>Results Page!!!</h1>
+
+<ul>
+		
+<% parampackage["displays"].forEach(function(display){ %>
+	<li>
+		<strong><%= display %></strong>  %>
+	</li>
+	<% }) %>
+
+</ul>
+
+<p>Paid Salary: <%= parampackage["paidsalary"].toString() %> </p>
+<p>Unpaid Salary: <%= parampackage["unpaidsalary"].toString() %> </p>
+
+<p>Weeks: <%= parampackage["weeks"].toString() %> (Dining Fee: <%= parampackage["dining"].toString() %>) </p>
+
+<h2>Total: <%= parampackage["earnedsalary"].toString() %> </h2>
+<a href = "/"> Search Again!</a>
